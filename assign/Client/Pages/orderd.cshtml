@@ -1,0 +1,30 @@
+﻿@page"/order"
+<h1>Order</h1>
+
+<p>Order Detail</p>
+
+
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Order</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ord in order)
+            {
+                <tr>
+                    <td>@ord.Date.Name</td>
+                    <td>@ord.Order</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@model assign.Client.Pages.orderdModel
+@{
+}
